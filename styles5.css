@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navigation / Navbar */
+.nav{
+    padding: 22px;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-left{
+    float: left;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.nav-left h1{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0px 0px 3px black;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav li{
+    text-decoration: none;
+    margin: 20px;
+    list-style: none;
+    display: inline;
+}
+
+.nav li a:hover{
+    color: black;
+    background-color: yellow;
+    padding: 10px;
+    text-shadow: 0px 0px 5px white;
+    border-radius: 30px;
+}
+
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: black;
+    min-width: 160px;
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 25px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li{
+    display: block;
+    margin: 10px;
+    text-align: left;
+}
+
+.dropdown-content li a:hover{
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+.SECTION-1{
+    background-image: url(images/MAINBG1.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+.SECTION1-TITLE h1{
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+.P1, .P2{
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+
+}
+
+
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+    padding: 200px;
+}
+
+
+.TABLE h2 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-shadow: 0px 0px 4px black;
+}
+
+.TABLE h2 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-shadow: 0px 0px 4px black;
+}
+
+.TABLE table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.TABLE th, .TABLE td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    text-align: left;
+    color: white;
+}
+
+.TABLE th {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+
+.TABLE tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.SECTION-2{
+    background-image: url(images/MAINBG2.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+.background-overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:white;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+
+.SECTION2-CONTENT{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style-position: inside;
+    text-align: justify;
+    padding: 200px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+
+.SECTION2-LIST{
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+.SECTION2-LIST ul{
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.travel-tips em{
+    font-style: normal;
+    font-weight: bold;
+    color: #ffd400; 
+}
+
+
+.SECTION-3{
+    background-image: url(images/MAINBG3.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.background-overlay3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+    padding: 200px;
+}
+
+.TABLE{
+    font-size: 18px;
+}
+
+.TABLE li{
+    font-size: 18px;
+}
+
+.TABLE h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-shadow: 0px 0px 4px black;
+}
+
+.packing-check{
+    text-align: justify;
+    position: relative;
+    left: 13%;
+}
+
+.packing-check{
+    list-style-type: disc;
+    padding-left: 25px;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.packing-check li {
+    margin-bottom: 12px;
+}
+
+
+
+.packing-check {
+    list-style: none; 
+    padding-left: 0;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.packing-check li {
+    position: relative;
+    padding-left: 30px; 
+    margin-bottom: 12px;
+}
+
+.packing-check em{
+    font-style: normal;
+    font-weight: bold;
+    color: #ffd400; 
+}
+
+.packing-check li::before {
+    content: "\2713"; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffd400; 
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.SECTION4{
+    background-image: url(images/INDEXBG2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.background-overlay4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+    padding: 200px;
+}
+
+
+.CONTACT-FORM {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 20px;
+    width: 400px;
+    margin: 50px auto;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+
+    position: relative;
+    bottom: 200px;
+}
+
+.CONTACT-FORM h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffd400; /* Yellow accent */
+}
+
+.CONTACT-FORM form {
+    display: flex;
+    flex-direction: column;
+}
+
+.CONTACT-FORM label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.CONTACT-FORM input,
+.CONTACT-FORM textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.CONTACT-FORM input:focus,
+.CONTACT-FORM textarea:focus {
+    box-shadow: 0 0 8px #ffd400;
+}
+
+.CONTACT-FORM button {
+    background-color: #ffd400;
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.CONTACT-FORM button:hover {
+    background-color: #ffea00;
+    transform: scale(1.05);
+}
+
+
+
+.FOOTER{
+    background-image: url(images/FOOTB.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    padding: 25px;
+}
+
+.FOOTER::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.FOOTER > * {
+    position: relative;
+    z-index: 1;    
+}
+
+.FOOT-LOGO{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.CONTACTS{
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.CONTACTS li{
+    list-style: none;
+    display: inline;
+}
+
+.IG{
+    position: relative;
+    bottom: 4px;
+}

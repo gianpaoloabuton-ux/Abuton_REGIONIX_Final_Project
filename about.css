@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ----------------------------
+   Navigation / Navbar
+   ---------------------------- */
+.nav{
+    padding: 22px;
+    text-align: right;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-left{
+    float: left;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.nav-left h1{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0px 0px 3px black;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav li{
+    text-decoration: none;
+    margin: 20px;
+    list-style: none;
+    display: inline;
+}
+
+.nav li a:hover{
+    color: black;
+    background-color: yellow;
+    padding: 10px;
+    text-shadow: 0px 0px 5px white;
+    border-radius: 30px;
+}
+
+
+/* ----------------------------
+   Dropdown menu
+   ---------------------------- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: black;
+    min-width: 160px;
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 25px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li{
+    display: block;
+    margin: 10px;
+    text-align: left;
+}
+
+.dropdown-content li a:hover{
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* ----------------------------
+   Hero / Background video
+   ---------------------------- */
+.SECTION-1{
+      position: relative;
+    bottom: 100px;
+    width: 100%;
+    height: 115vh;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    
+}
+
+
+
+.BACKGROUND-VID{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+

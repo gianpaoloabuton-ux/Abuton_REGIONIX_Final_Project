@@ -1,0 +1,291 @@
+/* Reset / Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navigation / Navbar */
+.nav{
+    padding: 22px;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-left{
+    float: left;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.nav-left h1{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0px 0px 3px black;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav li{
+    text-decoration: none;
+    margin: 20px;
+    list-style: none;
+    display: inline;
+}
+
+.nav li a:hover{
+    color: black;
+    background-color: yellow;
+    padding: 10px;
+    text-shadow: 0px 0px 5px white;
+    border-radius: 30px;
+}
+
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: black;
+    min-width: 160px;
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 25px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li{
+    display: block;
+    margin: 10px;
+    text-align: left;
+}
+
+.dropdown-content li a:hover{
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* Section 1 */
+
+.SECTION-1{
+    background-image: url(images/MAINBG1.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+
+    
+}
+
+
+
+.FP-IMG{
+    border-radius: 25px;
+}
+
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+    padding: 200px;
+}
+
+.SEC1-CONTENT{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style-position: inside;
+    text-align: justify;
+}
+
+.SEC1-CONTENT h1{
+    font-family: 'Trebuchet MS', sans-serif;
+    text-shadow: 0px 0px 4px black;
+}
+
+.ACTIVITIES-LIST ul{
+    list-style-type: square;
+    margin-top: 20px;
+    line-height: 1.8;
+
+    background-color: #fbfbfbe3;
+    color: black;
+    padding: 15px;
+    border-radius: 20px;        
+}
+
+
+
+/* Section 2*/
+
+.SECTION-2{
+    position: relative;
+    top: 100%;
+    background-image: url(images/MAINBG2.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+.RL-IMG{
+    border-radius: 25px;
+}
+
+.background-overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:white;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+
+.SEC2-CONTENT{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style-position: inside;
+    text-align: justify;
+    padding: 200px;
+}
+
+
+.SEC2-CONTENT h1{
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-shadow: 0px 0px 4px black;
+}
+
+/* Section 3*/ 
+
+
+
+.SECTION-3{
+    position: relative;
+    background-image: url(images/MAINBG3.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    text-align: justify;
+}
+
+
+.SEC3-CONTENT{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style-position: inside;
+    text-align: justify;
+    color: white;
+    padding: 200px;
+}
+
+.SEC3-CONTENT h1{
+    font-family: 'Trebuchet MS', sans-serif;
+    text-shadow: 0px 0px 4px black;
+}
+
+
+.background-overlay3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.DSL-IMG{
+    border-radius: 25px;
+
+}
+
+
+/* Footer */  
+
+
+.FOOTER{
+    background-image: url(images/FOOTB.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    padding: 25px;
+}
+
+.FOOTER::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.FOOTER > * {
+    position: relative;
+    z-index: 1;    
+}
+
+.FOOT-LOGO{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.CONTACTS{
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.CONTACTS li{
+    list-style: none;
+    display: inline;
+}
+
+.IG{
+    position: relative;
+    bottom: 4px;
+}
